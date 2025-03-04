@@ -16,9 +16,7 @@ This script, `ec_graviton_migration.py`, automates the recommendation of AWS Gra
 - AWS CLI installed and configured with appropriate IAM permissions.
 - Boto3 Python SDK installed (`pip install boto3`).
 - IAM role or access credentials with necessary permissions:
-  - DescribeInstances
-  - DescribeInstanceTypes
-  - GetPricing
+  - GetProducts
 
 ## Installation
 
@@ -42,9 +40,8 @@ python ec_graviton_migration.py
 
 ## How It Works
 
-1. The script retrieves all running x86-based EC2 instances.
-2. It identifies suitable Graviton instance types based on vCPU, memory, and performance equivalence.
-3. It fetches and displays the pricing details of both the current and recommended instance types.
+1. It identifies suitable Graviton instance types based on vCPU, memory, and performance equivalence.
+2. It fetches and displays the pricing details of both the current and recommended instance types.
 
 ## Limitations
 
